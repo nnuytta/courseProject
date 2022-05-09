@@ -1,0 +1,73 @@
+.person-card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.person-card {
+    flex: 0 1 calc(100% / 4 - 15px);
+    
+    position: relative;
+
+    &-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        margin-bottom: 30px;
+    }
+
+    &-name {
+        span {
+            text-transform: capitalize;
+            font-size: $_24px;
+            font-weight: 700;
+        }
+
+        margin-bottom: 5px;
+    }
+
+    &-post {
+        span {
+            color: $red;
+            font-size: $_18px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        margin-bottom: 18px;
+    }
+
+    &-description {
+        p {
+            font-size: $_18px;
+            font-weight: 400;
+            color: $grey;
+        }
+
+        margin-bottom: calc(38px + $_39px);
+    }
+    
+    &-socials {
+        
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        i {
+            border: 1px solid $lighterGrey;
+            color: $lighterGrey;
+            font-size: $_18px;
+            line-height: $_39px;
+            width: $_39px;
+            text-align: center;
+        }
+    }
+}
+
